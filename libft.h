@@ -30,4 +30,7 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n);
 char	*ft_strdup(const char *str);
 char	*ft_strcat(char *str1, const char *str2);
 char	*ft_strncat(char *str1, const char *str2, size_t n);
+size_t	ft_strlcat(char *str1, const char *str2, size_t n);
+char	*ft_strchr(const char *str, int c);
+char	*ft_strrchr(const char *str, int c);
 #endif
