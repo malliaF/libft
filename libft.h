@@ -28,4 +28,6 @@ void	*ft_memmove(void *dst, const void *src, size_t n);
 char	*ft_strncpy(char *dst, const char *src, size_t n);
 int	ft_memcmp(const void *str1, const void *str2, size_t n);
 char	*ft_strdup(const char *str);
+char	*ft_strcat(char *str1, const char *str2);
+char	*ft_strncat(char *str1, const char *str2, size_t n);
 #endif
