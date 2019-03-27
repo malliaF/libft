@@ -35,4 +35,6 @@ char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_strstr(const char *str, const char *substr);
 char	*ft_strnstr(const char *str, const char *substr, size_t n);
+int	ft_strcmp(const char *str1, const char *str2);
+int	ft_strncmp(const char *str1, const char *str2, size_t n);
 #endif
