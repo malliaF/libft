@@ -1,15 +1,19 @@
 #include "libft.h"
 
+/*
+Функция strrchr ищет последнее вхождение символа c в строке,
+на которую указывает аргумент str.
+*/
 char	*ft_strrchr(const char *str, int c)
 {
-	char *s;
+	char *strrev;
 
-	s = (char*)str + ft_strlen(str);
-	while (*s != c)
+	strrev = (char*)str + ft_strlen(str); //пришли в последний элемент нашего str
+	while (*strrev != c)
 	{
-		if (s == str)
+		if (strrev == str) //дошли до начала строки и ничего не нашли? тогда возвращаем NULL
 			return (NULL);
-		s--;
+		strrev--;
 	}
-	return (s);
+	return (strrev);
 }

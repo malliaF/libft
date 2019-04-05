@@ -6,7 +6,7 @@
 /*   By: mashafedotova <mashafedotova@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/05 20:10:29 by mashafedoto       #+#    #+#             */
-/*   Updated: 2019/03/06 18:43:06 by mashafedoto      ###   ########.fr       */
+/*   Updated: 2019/04/03 21:39:16 by mashafedoto      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ void	*ft_memmove(void *dst, const void *src, size_t n);
 char	*ft_strncpy(char *dst, const char *src, size_t n);
 int	ft_memcmp(const void *str1, const void *str2, size_t n);
 char	*ft_strdup(const char *str);
-char	*ft_strcat(char *str1, const char *str2);
-char	*ft_strncat(char *str1, const char *str2, size_t n);
-size_t	ft_strlcat(char *str1, const char *str2, size_t n);
+char	*ft_strcat(char *dst, const char *append);
+char	*ft_strncat(char *dst, const char *append, size_t n);
+size_t	ft_strlcat(char *dst, const char *append, size_t n);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_strstr(const char *str, const char *substr);

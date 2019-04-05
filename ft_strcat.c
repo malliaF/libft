@@ -1,20 +1,26 @@
 #include "libft.h"
 
-char	*ft_strcat(char *str1, const char *str2)
+/*
+Функция strcat добавляет в строку, на которую указывает аргумент dst,
+строку, на которую указывает аргумент append. Символ конца строки помещается
+в конце объединенных строк.
+Если строки перекрываются, результат объединения будет неопределен.
+*/
+char	*ft_strcat(char *dst, const char *append)
 {
-	char *s1;
-	char *s2;
+	size_t i;
+	size_t j;
 
-	s1 = str1;
-	s2 = (char*)str2;
-	while (*s1 != '\0')
-		s1++;
-	while (*s2 != '\0')
+	i = 0;
+	j = 0;
+	while (dst[i] != '\0') // идем до конца строки, к которой будем прикреплять другую строку
+		i++;
+	while (append[j] != '\0') // добавляем наш append к dst
 	{
-		*s1 = *s2;
-		s1++;
-		s2++;
+		dst[i] = append[j];
+		i++;
+		j++;
 	}
-	*s1 = '\0';
-	return (str1);
-}	
+	dst[i] = '\0';
+	return (dst);
+}
