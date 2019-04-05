@@ -6,7 +6,7 @@
 /*   By: mashafedotova <mashafedotova@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/05 20:10:29 by mashafedoto       #+#    #+#             */
-/*   Updated: 2019/04/03 21:39:16 by mashafedoto      ###   ########.fr       */
+/*   Updated: 2019/04/05 15:57:39 by qpfanner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,4 +45,19 @@ int	ft_isascii(int c);
 int	ft_isprint(int c);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
+void	*ft_memalloc(size_t size);
+void	ft_memdel(void **ap);
+char	*ft_strnew(size_t size);
+void	ft_strdel(char **as);
+void	ft_strclr(char *s);
+void	ft_striter(char *s, void (*f)(char*));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+char	*ft_strmap(char const *s, char (*f)(char));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_putchar(char c);
+void	ft_putstr(char const *s);
+void	ft_putendl(char const *s);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char const *s, int fd);
+void	ft_putendl_fd(char const *s, int fd);
 #endif

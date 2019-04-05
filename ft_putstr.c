@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strclr.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qpfanner <qpfanner@student.42.fr>          +#+  +:+       +#+        */
+/*   By: qpfanner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/05 12:30:48 by qpfanner          #+#    #+#             */
-/*   Updated: 2019/04/05 15:18:48 by qpfanner         ###   ########.fr       */
+/*   Created: 2019/04/05 15:44:54 by qpfanner          #+#    #+#             */
+/*   Updated: 2019/04/05 15:48:52 by qpfanner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-Sets every character of the string to the value ’\0’.
-*/
-void    ft_strclr(char  *s)
+void	ft_putstr(char const *s)
 {
-    if (s != NULL)
-    {
-        while (*s)
-        {
-            *s = '\0';
-            s++;
-        }
-    }
+	size_t i;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		ft_putchar(s[i]);
+		i++;
+	}
 }
