@@ -6,23 +6,20 @@
 /*   By: qpfanner <qpfanner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 12:30:48 by qpfanner          #+#    #+#             */
-/*   Updated: 2019/04/05 15:18:48 by qpfanner         ###   ########.fr       */
+/*   Updated: 2019/04/09 17:37:29 by qpfanner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-Sets every character of the string to the value ’\0’.
-*/
-void    ft_strclr(char  *s)
+void	ft_strclr(char *s)
 {
-    if (s != NULL)
-    {
-        while (*s)
-        {
-            *s = '\0';
-            s++;
-        }
-    }
+	if (s != NULL)
+	{
+		while (*s)
+		{
+			*s = '\0';
+			s++;
+		}
+	}
 }

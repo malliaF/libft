@@ -3,23 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mashafedotova <mashafedotova@student.42    +#+  +:+       +#+        */
+/*   By: qpfanner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/05 12:18:09 by qpfanner          #+#    #+#             */
-/*   Updated: 2019/04/08 17:08:50 by mashafedoto      ###   ########.fr       */
+/*   Created: 2019/04/09 17:34:34 by qpfanner          #+#    #+#             */
+/*   Updated: 2019/04/09 17:34:59 by qpfanner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-Берет в качестве аргумента адрес в памяти, который нужно free и приводит указатель к NULL
-*/
-void    ft_memdel(void **ap)
+void	ft_memdel(void **ap)
 {
-    if (ap)
-    {
-        free (*ap);
-        *ap = NULL;
-    }
+	if (ap)
+	{
+		free(*ap);
+		*ap = NULL;
+	}
 }
