@@ -3,37 +3,36 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qpfanner <qpfanner@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mashafedotova <mashafedotova@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 14:16:18 by qpfanner          #+#    #+#             */
-/*   Updated: 2019/04/05 14:20:11 by qpfanner         ###   ########.fr       */
+/*   Updated: 2019/04/09 07:26:21 by mashafedoto      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-Applies the function f to each character of the string passed as argument 
-by giving its index as first argument to create a “fresh” new string 
-(with malloc(3)) resulting from the successive applications of f.
-*/
+/*This function is exactly the same as ft_strmap except that when we run
+	 * our given function f on the character we also pass to f the specific
+	 * index of our character in the given string. Review ft_strmap in order
+	 * to understand how this function works.*/
 char    *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
     unsigned int    i;
     char            *newstr;
 
     i = 0;
-    if (s == NULL)
+    if (s == NULL || f == NULL)
+        return (NULL);
+    newstr = ft_strdup((const char *)s);
+    if (newstr)
     {
-        if (NULL == (newstr = ft_memalloc(ft_strlen(s) + 1)))
-            return (NULL);
-        while (s[i])
-            {
-                newstr[i] = f(i, s[i]);
-                i++;
-            }
-        newstr[i] = '\0';
-        return (newstr);
+        while (newstr[i] != '\0')
+        {
+            newstr[i] = f(i, s[i]);
+            i++;
+    }   
+    newstr[i] = '\0';
     }
-    return (NULL);
+    return (newstr);
 }
