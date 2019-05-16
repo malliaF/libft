@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qpfanner <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: qpfanner <qpfanner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 15:36:59 by qpfanner          #+#    #+#             */
-/*   Updated: 2019/04/09 15:38:49 by qpfanner         ###   ########.fr       */
+/*   Updated: 2019/05/16 17:09:51 by qpfanner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,13 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {
-	size_t			i;
+	size_t				i;
 	unsigned char		*dst2;
 	const unsigned char	*src2;
 
 	i = 0;
 	dst2 = (unsigned char*)dst;
 	src2 = (const unsigned char*)src;
-	
 	if (dst2 < src2)
 	{
 		while (i < n)

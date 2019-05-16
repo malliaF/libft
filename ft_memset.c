@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qpfanner <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: qpfanner <qpfanner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 15:19:08 by qpfanner          #+#    #+#             */
-/*   Updated: 2019/04/09 15:22:23 by qpfanner         ###   ########.fr       */
+/*   Updated: 2019/05/16 17:07:46 by qpfanner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void	*ft_memset(void *str, int c, size_t n)
-{	
-	size_t		i;
+{
+	size_t			i;
 	unsigned char	ch;
 	unsigned char	*ptr;
 
