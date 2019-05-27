@@ -3,23 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qpfanner <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mashafedotova <mashafedotova@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 14:48:01 by qpfanner          #+#    #+#             */
-/*   Updated: 2019/04/09 15:15:16 by qpfanner         ###   ########.fr       */
+/*   Updated: 2019/05/25 20:35:25 by mashafedoto      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	ft_isspace(char c)
-{
-	if (c == ' ' || c == '\t' || c == '\r' ||
-			c == '\v' || c == '\n' || c == '\f')
-		return (1);
-	else
-		return (0);
-}
 
 int			ft_atoi(const char *str)
 {
