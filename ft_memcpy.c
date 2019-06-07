@@ -6,7 +6,7 @@
 /*   By: qpfanner <qpfanner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 15:23:07 by qpfanner          #+#    #+#             */
-/*   Updated: 2019/05/21 20:03:28 by qpfanner         ###   ########.fr       */
+/*   Updated: 2019/06/07 21:04:33 by qpfanner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void					*ft_memcpy(void *dst, const void *src, size_t n)
 	const unsigned char	*src2;
 
 	i = 0;
+	if (!dst && !src)
+		return (NULL);
 	dst2 = (unsigned char*)dst;
 	src2 = (const unsigned char*)src;
 	while (i < n)

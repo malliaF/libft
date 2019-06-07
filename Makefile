@@ -6,7 +6,7 @@
 #    By: qpfanner <qpfanner@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/03/05 20:04:41 by mashafedoto       #+#    #+#              #
-#    Updated: 2019/05/19 18:52:26 by qpfanner         ###   ########.fr        #
+#    Updated: 2019/06/07 21:02:35 by qpfanner         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,6 +70,7 @@ SRC = ./ft_atoi.c \
 		./ft_strtrim.c \
 		./ft_strsplit.c \
 		./ft_tolower.c \
+		./ft_isspace.c \
 
 OBJ = ./ft_atoi.o \
 		./ft_bzero.o \
@@ -129,6 +130,7 @@ OBJ = ./ft_atoi.o \
 		./ft_strtrim.o \
 		./ft_strsplit.o \
 		./ft_tolower.o \
+		./ft_isspace.o \
 
 INC = ./libft.h
 
